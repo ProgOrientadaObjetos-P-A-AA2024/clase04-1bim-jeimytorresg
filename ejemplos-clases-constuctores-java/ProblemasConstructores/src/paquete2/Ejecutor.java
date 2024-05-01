@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package paquete2;
-
+import java.util.Scanner;
 /**
  *
  * @author reroes
@@ -15,6 +15,8 @@ public class Ejecutor {
         /*Crear un objeto y presentar los datos
         Ingresar la información por teclado.
         */
+        Scanner sc = new Scanner(System.in);
+        Hospital hospital = new Hospital();
         
         Hospital h1 = new Hospital("Militar", "Loja", 1000, 3000);
         
