@@ -33,17 +33,12 @@ public class Ejecutor {
         
         Hospital h2 = new Hospital("Militar DOS", "Loja", 1000, 3000);
         
-        System.out.printf("%s\n%s\n%d\n%d\n", h1.obtenerNombre(),
-                h1.obtenerCiudad(), h1.obtenerNumeroDoctores(),
-                h1.obtenerNumeroEnfermeros());
+        System.out.printf("%s\n", h1);
         System.out.println("---------------------------------------------");
-        System.out.printf("%s\n%s\n%d\n%d\n", h2.obtenerNombre(),
-                h2.obtenerCiudad(), h2.obtenerNumeroDoctores(),
-                h2.obtenerNumeroEnfermeros());
+        System.out.printf("%s\n", h2);
         System.out.println("---------------------------------------------");
         System.out.printf("%s\n%s\n%d\n%d\n", hospital.obtenerNombre(),
                 hospital.obtenerCiudad(), hospital.obtenerNumeroDoctores(),
                 hospital.obtenerNumeroEnfermeros());
-        
     }
 }
