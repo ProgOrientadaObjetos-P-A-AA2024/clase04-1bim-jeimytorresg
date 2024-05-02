@@ -16,7 +16,16 @@ public class Ejecutor {
         Ingresar la información por teclado.
         */
         Scanner sc = new Scanner(System.in);
-        Hospital hospital = new Hospital();
+        System.out.println("Ingrese el nombre del hospital: ");
+        String nombre = sc.nextLine();
+        System.out.println("Ingrese la ciudad: ");
+        String ciudad = sc.nextLine();
+        System.out.println("Ingrese el numero de doctores: ");
+        int numDoc= sc.nextInt();
+        System.out.println("Ingrese el numero de enfermeros: ");
+        int numEnf = sc.nextInt();
+        
+        Hospital hospital = new Hospital(nombre, ciudad, numDoc, numEnf);
         
         Hospital h1 = new Hospital("Militar", "Loja", 1000, 3000);
         
@@ -24,8 +33,17 @@ public class Ejecutor {
         
         Hospital h2 = new Hospital("Militar DOS", "Loja", 1000, 3000);
         
-        System.out.printf("%s\n", h1);
-        System.out.printf("%s\n", h2);
+        System.out.printf("%s\n%s\n%d\n%d\n", h1.obtenerNombre(),
+                h1.obtenerCiudad(), h1.obtenerNumeroDoctores(),
+                h1.obtenerNumeroEnfermeros());
+        System.out.println("---------------------------------------------");
+        System.out.printf("%s\n%s\n%d\n%d\n", h2.obtenerNombre(),
+                h2.obtenerCiudad(), h2.obtenerNumeroDoctores(),
+                h2.obtenerNumeroEnfermeros());
+        System.out.println("---------------------------------------------");
+        System.out.printf("%s\n%s\n%d\n%d\n", hospital.obtenerNombre(),
+                hospital.obtenerCiudad(), hospital.obtenerNumeroDoctores(),
+                hospital.obtenerNumeroEnfermeros());
         
     }
 }
