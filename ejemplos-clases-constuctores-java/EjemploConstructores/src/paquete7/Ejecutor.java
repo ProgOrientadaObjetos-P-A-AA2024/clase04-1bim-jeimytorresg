@@ -26,11 +26,6 @@ public class Ejecutor {
         // se llama al método que calcula el valor de la factura
         fac2.calcularValorFactura(); 
         System.out.println("\nObjeto con argumentos\n");
-        System.out.printf("Número telefónico: %s\n"
-                + "Minutos mes: %.2f\nValor minuto: %.2f\n"
-                + "Valor factura: %.2f\n", fac2.obtenerNumeroTelefono(),
-                fac2.obtenerMinutosMes(),
-                fac2.obtenerValorMinuto(),
-                fac2.obtenerValorFactura());
+        System.out.printf("%s\n", fac2);
     }
 }
